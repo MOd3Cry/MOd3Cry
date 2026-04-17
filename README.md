@@ -20,7 +20,7 @@ consistency   : 6h/day
 
 ## ⌁ execution_loop.rs
 
-```rust
+```txt
 fn main() {
     loop {
         match world.try_reach("cryptography") {
