@@ -1,16 +1,55 @@
-## Hi there 👋
+# █▓▒░ diagnostics: ERROR_0x0 ░▒▓█
 
-<!--
-**MOd3Cry/MOd3Cry** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+> boot sequence corrupted...
+> attempting recovery...
+> signal integrity: degraded
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## ⛧ [ NULL_STAGE::INIT ]
+
+```diff
+- sanity:        LOST
++ signal:        UNSTABLE
+! target:        CRYPTOGRAPHY
+```
+
+---
+
+## ╼ PATHWAY.sys
+
+`RUST` ⇢ `BACKEND` ⇢ `SYSTEMS` ⇢ `CRYPTO`
+
+```
+[ STATUS ]
+progress      : ███▒▒▒▒▒▒ ??%
+consistency   : 6h/day
+```
+
+---
+
+## ⌁ execution_loop.rs
+
+```rust
+fn main() {
+    loop {
+        match world.try_reach("cryptography") {
+            Ok(_) => transcend(),
+            Err(_) if is_dead() => break,
+            Err(_) => continue,
+        }
+    }
+}
+```
+
+---
+
+## ⛓ current_state
+
+```
+focus        : rust + backend
+direction    : systems programming
+end_goal     : cryptography
+```
+
+---
