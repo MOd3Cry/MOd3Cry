@@ -8,16 +8,6 @@
 
 ## ⛧ [ NULL_STAGE::INIT ]
 
-```diff
-- sanity:        LOST
-+ signal:        UNSTABLE
-! target:        CRYPTOGRAPHY
-```
-
----
-
-## ╼ PATHWAY.sys
-
 `RUST` ⇢ `BACKEND` ⇢ `SYSTEMS` ⇢ `CRYPTO`
 
 ```
@@ -40,16 +30,6 @@ fn main() {
         }
     }
 }
-```
-
----
-
-## ⛓ current_state
-
-```
-focus        : rust + backend
-direction    : systems programming
-end_goal     : cryptography
 ```
 
 ---
